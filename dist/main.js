@@ -1,1 +1,1 @@
-console.log("I ama great man");
+(()=>{const e=document.querySelector(".container");document.querySelector(".contain").addEventListener("click",(n=>{n.preventDefault(),e.innerHTML="",e.innerHTML="This is my desire"}))})();
