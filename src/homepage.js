@@ -21,6 +21,12 @@ function createNavBar(){
         <li class="nav-item">
           <a class="nav-link" href="#">Menu</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Our Chefs</a>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             More Items
@@ -28,15 +34,15 @@ function createNavBar(){
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Book a table</a>
             <a class="dropdown-item" href="#">Make Reservations</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider">Talk to us</div>
+            <a class="dropdown-item" href="#">Our recipes</a>
           </div>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Delievery</a>
+        </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      
     </div>
   </nav> `
 
@@ -95,6 +101,7 @@ function createNavBar(){
     Quisque dignissim, mi ac imperdiet dictum, purus ipsum vestibulum odio, ac lacinia arcu arcu ut odio. Phasellus pharetra urna arcu, id semper purus porttitor sed. Cras id neque eu lorem ullamcorper dapibus nec varius augue. Vestibulum varius vulputate fringilla. Vivamus sagittis eros eget elit ultricies, eget dignissim nulla egestas. Fusce ultrices, ipsum id mollis pretium, metus ipsum placerat neque, et gravida velit nibh ac sem. Donec ante dolor, mattis id elit eu, tempus volutpat velit. Pellentesque vulputate pellentesque libero sed dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In malesuada nibh arcu, at ornare quam laoreet et. Praesent consequat tristique dui nec tincidunt. Sed et felis nec nulla aliquam ultrices sollicitudin tempus quam. In magna quam, tristique id tristique at, scelerisque sit amet lacus.
   
   </P>`
+
   navDiv.innerHTML = contents
   footerDiv.innerHTML =footer
   bodyDiv.innerHTML = bodycontent
