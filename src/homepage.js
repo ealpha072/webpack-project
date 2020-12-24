@@ -1,7 +1,8 @@
-const mainDiv = document.querySelector('.container');
+const mainDiv = document.querySelector('.container-fluid');
 
 function createNavBar(){
   let navDiv = document.createElement('div'),
+      bodyDiv = document.createElement('div'),
       footerDiv = document.createElement('div');
   let contents = `
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
