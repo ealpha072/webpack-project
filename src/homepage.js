@@ -4,9 +4,11 @@ function createNavBar(){
   let navDiv = document.createElement('div'),
       bodyDiv = document.createElement('div'),
       footerDiv = document.createElement('div');
+
+  bodyDiv.setAttribute('class','body-div')
   let contents = `
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">Raymond</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -17,15 +19,15 @@ function createNavBar(){
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Menu</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
+            More Items
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Book a table</a>
+            <a class="dropdown-item" href="#">Make Reservations</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>
           </div>
@@ -82,7 +84,8 @@ function createNavBar(){
   `
   navDiv.innerHTML = contents
   footerDiv.innerHTML =footer
-  mainDiv.append(navDiv,footerDiv)
+  
+  mainDiv.append(navDiv,bodyDiv,footerDiv)
 }
 
 export default createNavBar
