@@ -1,3 +1,3 @@
 
-import createNavBar from './homepage';
+import createHomepage from './homepage';
 createNavBar();
