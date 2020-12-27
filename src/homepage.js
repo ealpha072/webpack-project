@@ -87,25 +87,27 @@ function createHomepage(){
       <!-- Copyright -->
     </footer>
   
+  `,
+
+  aboutUs = `
+      <div>
+          <div>
+              <img src="../src/img/about1.jpg" alt="">
+          </div>
+          <div class="section-heading">
+              <h2>About Us</h2>
+          </div>
+          <div class="about-us-content">
+              <span>restaurant style</span>
+              <p>Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor. Integer molestie rhoncus nisi a euismod. Etiam scelerisque eu enim et vestibulum. Mauris finibus, eros a faucibus varius, dui risus mattis massa, sed lobortis ante ante eget justo. Nam eu dolor lorem. Praesent blandit leo sit amet velit accumsan ultrices. Vestibulum nec libero vel sapien dictum euismod eu ac justo.</p>
+          </div>
+      </div>
   `
-
-  let bodycontent =`<p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis felis et lectus facilisis, et scelerisque sapien blandit. Morbi eget magna id urna malesuada pharetra. In euismod quam quis lobortis gravida. Nulla facilisis rhoncus ligula, sed viverra nibh elementum suscipit. Phasellus tempus purus vel pharetra tincidunt. Nunc nec ornare mauris, ac rhoncus massa. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
-    Praesent euismod, purus mollis tincidunt fermentum, dui quam varius nibh, eu efficitur ex ante ut mauris. Suspendisse hendrerit pulvinar lorem. Maecenas fringilla, dolor ac pharetra ultrices, eros mi aliquet massa, ut tempor felis velit ut libero. Proin eu pellentesque turpis. In porttitor ipsum ut lorem euismod sodales. Phasellus id facilisis urna. Donec tincidunt viverra urna, at tincidunt diam ultricies sed. Ut eget auctor sapien. Nam eu dui eget nisi tristique porttitor vel nec lorem.
-    
-    Vivamus aliquet augue non nisi viverra imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum, est a laoreet elementum, quam turpis tincidunt dolor, eget tempus augue libero sit amet velit. Vivamus commodo ipsum elit. Vestibulum vitae metus ut ante accumsan consectetur at ut tellus. Mauris tristique pretium dolor quis blandit. Donec laoreet volutpat justo, a suscipit ligula pharetra eget. Suspendisse sed elit faucibus, pretium sapien vitae, sollicitudin nisl. Pellentesque tellus nulla, mattis eu condimentum vel, sodales a tortor. Donec rhoncus blandit imperdiet. Pellentesque tristique libero nec nibh maximus elementum.
-    
-    Vestibulum sagittis lacus eu urna ultrices, at consectetur ligula congue. Etiam tempus sapien ipsum, sed hendrerit nunc pharetra vel. Proin id condimentum massa. Nam dictum fermentum mattis. Nullam consequat sed lectus ut rhoncus. Nam porttitor congue semper. Phasellus cursus elit sapien, eu venenatis enim tincidunt eu. Donec varius odio a mi pulvinar, ac facilisis felis facilisis. Sed luctus ante in nulla dictum, at auctor velit cursus. Nam a mauris tincidunt, malesuada nisi et, posuere ipsum. Nulla euismod, magna et egestas accumsan, ante turpis interdum dui, non dapibus ante nunc at neque. Nam faucibus, turpis ac congue elementum, ligula erat semper justo, ac tempus magna tortor ac erat. Duis fermentum libero et lorem fringilla auctor. Duis vitae purus in arcu ultricies commodo. Mauris eu auctor nulla.
-    
-    Quisque dignissim, mi ac imperdiet dictum, purus ipsum vestibulum odio, ac lacinia arcu arcu ut odio. Phasellus pharetra urna arcu, id semper purus porttitor sed. Cras id neque eu lorem ullamcorper dapibus nec varius augue. Vestibulum varius vulputate fringilla. Vivamus sagittis eros eget elit ultricies, eget dignissim nulla egestas. Fusce ultrices, ipsum id mollis pretium, metus ipsum placerat neque, et gravida velit nibh ac sem. Donec ante dolor, mattis id elit eu, tempus volutpat velit. Pellentesque vulputate pellentesque libero sed dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In malesuada nibh arcu, at ornare quam laoreet et. Praesent consequat tristique dui nec tincidunt. Sed et felis nec nulla aliquam ultrices sollicitudin tempus quam. In magna quam, tristique id tristique at, scelerisque sit amet lacus.
-  
-  </P>`
 
 
   navDiv.innerHTML = contents
   footerDiv.innerHTML =footer
-  bodyDiv.innerHTML = bodycontent
+  bodyDiv.innerHTML = aboutUs
   mainDiv.append(navDiv,bodyDiv,footerDiv)
 }
 
