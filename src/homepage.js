@@ -3,6 +3,7 @@ const mainDiv = document.querySelector('.container-fluid');
 function createHomepage(){
   let navDiv = document.createElement('div'),
       bodyDiv = document.createElement('div'),
+      body2 = document.createElement('div'),
       testimonialDiv = document.createElement('div'),
       footerDiv = document.createElement('div');
 
@@ -47,9 +48,9 @@ function createHomepage(){
       </ul>
       
     </div>
-  </nav> `
+  </nav> `,
 
-  let footer = `
+ footer = `
       <footer class="bg-light text-center text-lg-start">
       <!-- Grid container -->
       <div class="container p-4 pb-0">
@@ -176,17 +177,17 @@ testimonials = `
         </div>
     </div>
 
-  </div>
-
-
-`
+  </div>`,
+  body2 = `
+  
+  `
 
 
   navDiv.innerHTML = contents
   footerDiv.innerHTML =footer
   bodyDiv.innerHTML = aboutUs
   testimonialDiv.innerHTML = testimonials
-  mainDiv.append(navDiv,bodyDiv,testimonialDiv,footerDiv)
+  mainDiv.append(navDiv,bodyDiv,body2,testimonialDiv,footerDiv)
 }
 
 export default createHomepage
