@@ -3,6 +3,7 @@ const mainDiv = document.querySelector('.container-fluid');
 function createHomepage(){
   let navDiv = document.createElement('div'),
       bodyDiv = document.createElement('div'),
+      testimonialDiv = document.createElement('div'),
       footerDiv = document.createElement('div');
 
   bodyDiv.setAttribute('class','body-div')
@@ -100,21 +101,21 @@ function createHomepage(){
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="../src/img/wp1.jpg" alt="First slide" class="img-fluid max-height:100" style="max-width: 100%;height: auto;">
+            <img class="d-block w-100" src="../src/img/wp1.jpg" alt="First slide" class="img-fluid " style="max-width: 100%;height: auto;">
             <div class="carousel-caption d-none d-md-block">
               <h3>Fine Dining at Raymond</h3>
               <p>Ellegance at its best</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="../src/img/wp2.jpg" alt="Second slide" class="img-fluid max-height:100" style="max-width: 100%;height: auto;">
+            <img class="d-block w-100" src="../src/img/wp2.jpg" alt="Second slide" class="img-fluid " style="max-width: 100%;height: auto;">
             <div class="carousel-caption d-none d-md-block">
               <h3>Fine Dining at Raymond</h3>
               <p>Ellegance at its best</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="../src/img/wp3.jpg" alt="Third slide" class="img-fluid max-height:100" style="max-width: 100%;height: auto;">
+            <img class="d-block w-100" src="../src/img/wp3.jpg" alt="Third slide" class="img-fluid " style="max-width: 100%;height: auto;">
             <div class="carousel-caption d-none d-md-block">
               <h3>Fine Dining at Raymond</h3>
               <p>Ellegance at its best</p>
@@ -145,13 +146,40 @@ function createHomepage(){
       </div>
       <div></div>
       <div></div>
-  `
+  `,
+
+testimonials = `
+  <div class= "row">
+    <div class="col card" style="width: 18rem;">
+      <img class="card-img-top rounded-circle" src="../src/img/face1.jpg" alt="Card image cap" style="width:75px;height:75px;">
+      <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    <div class="col card" style="width: 18rem;">
+      <img class="card-img-top rounded-circle" src="../src/img/face1.jpg" alt="Card image cap" style="width:75px;height:75px;">
+      <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    <div class="col card" style="width: 18rem;">
+      <img class="card-img-top rounded-circle" src="../src/img/face1.jpg" alt="Card image cap" style="width:75px;height:75px;">
+      <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+
+  </div>
+
+
+`
 
 
   navDiv.innerHTML = contents
   footerDiv.innerHTML =footer
   bodyDiv.innerHTML = aboutUs
-  mainDiv.append(navDiv,bodyDiv,footerDiv)
+  testimonialDiv.innerHTML = testimonials
+  mainDiv.append(navDiv,bodyDiv,testimonialDiv,footerDiv)
 }
 
 export default createHomepage
