@@ -162,14 +162,14 @@ testimonials = `
         </div>
     </div>
     <div class="col card" style="width: 18rem;">
-      <img class="card-img-top rounded-circle" src="../src/img/face1.jpg" alt="Card image cap" style="width:75px;height:75px;">
+      <img class="card-img-top rounded-circle" src="../src/img/2.jpg" alt="Card image cap" style="width:75px;height:75px;">
       <div class="card-body">
           <h6 class = "card-text">Jane Black</h6>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
     </div>
     <div class="col card" style="width: 18rem;">
-      <img class="card-img-top rounded-circle" src="../src/img/face1.jpg" alt="Card image cap" style="width:75px;height:75px;">
+      <img class="card-img-top rounded-circle" src="../src/img/3.jpg" alt="Card image cap" style="width:75px;height:75px;">
       <div class="card-body">
           <h6 class = "card-text">Jane Black</h6>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
