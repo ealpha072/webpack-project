@@ -17,3 +17,12 @@
   color: red;
 }
 
+.container-fluid #testimony{
+  margin:20px 10px;
+}
+
+.container-fluid #testimony .row .col{
+  margin:10px 10px;
+}
+
+
