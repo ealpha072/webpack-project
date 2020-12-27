@@ -90,18 +90,56 @@ function createHomepage(){
   `,
 
   aboutUs = `
-      <div>
-          <div>
-              <img src="../src/img/about1.jpg" alt="">
+      <div class="d-inline">
+        <div>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="../src/img/wp1.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Fine Dining at Raymond</h5>
+              <p>Ellegant</p>
+            </div>
           </div>
-          <div class="section-heading">
-              <h2>About Us</h2>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="../src/img/wp2.jpg" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Fine Dining at Raymond</h5>
+              <p>Ellegant</p>
+            </div>
           </div>
-          <div class="about-us-content">
-              <span>restaurant style</span>
-              <p>Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor. Integer molestie rhoncus nisi a euismod. Etiam scelerisque eu enim et vestibulum. Mauris finibus, eros a faucibus varius, dui risus mattis massa, sed lobortis ante ante eget justo. Nam eu dolor lorem. Praesent blandit leo sit amet velit accumsan ultrices. Vestibulum nec libero vel sapien dictum euismod eu ac justo.</p>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="../src/img/wp3.jpg" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Fine Dining at Raymond</h5>
+              <p>Ellegant</p>
+            </div>
           </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
+        </div>
+        <div>
+          <h1>About Us</h1>
+          <h6>RESTAURANT STYLE</h6>
+          <p>
+            Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. 
+            Mauris porttitor diam at fringilla tempor. Integer molestie rhoncus nisi a euismod. 
+            Etiam scelerisque eu enim et vestibulum. Mauris finibus, eros a faucibus varius, dui risus mattis massa. 
+            Nam eu dolor lorem. Praesent blandit leo sit amet velit accumsan ultrices. 
+            Vestibulum nec libero vel sapien dictum euismod eu ac justo.
+          </P
+        </div>
+      </div>
+      <div></div>
+      <div></div>
   `
 
 
