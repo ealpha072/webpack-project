@@ -1,0 +1,19 @@
+.body-div{
+  background-image: url('../src/img/wallpaper.jpg');
+}
+
+#navbarSupportedContent a{
+  color:white;
+}
+
+#navbarSupportedContent a:hover{
+  color: red;
+}
+
+#navbarSupportedContent .dropdown-menu a{
+  color: black;
+}
+#navbarSupportedContent .dropdown-menu a:hover{
+  color: red;
+}
+
