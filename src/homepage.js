@@ -7,6 +7,8 @@ function createHomepage(){
       footerDiv = document.createElement('div');
 
   bodyDiv.setAttribute('class','body-div')
+  testimonialDiv.setAttribute('id','testimony')
+  //testimonialDiv.setAttribute('class','bg-primary')
   let contents = `
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Raymond</a>
@@ -36,7 +38,7 @@ function createHomepage(){
             <a class="dropdown-item" href="#">Book a table</a>
             <a class="dropdown-item" href="#">Make Reservations</a>
             <div class="dropdown-divider">Talk to us</div>
-            <a class="dropdown-item" href="#">Awards</a>
+            <a class="dropdown-item" href="#testimony">Testimomnials</a>
           </div>
         </li>
         <li class="nav-item">
@@ -149,22 +151,27 @@ function createHomepage(){
   `,
 
 testimonials = `
+<h1 class="text-center">Testimonials</h1>
   <div class= "row">
+    
     <div class="col card" style="width: 18rem;">
       <img class="card-img-top rounded-circle" src="../src/img/face1.jpg" alt="Card image cap" style="width:75px;height:75px;">
       <div class="card-body">
+          <h6 class = "card-text">Jane Black</h6>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
     </div>
     <div class="col card" style="width: 18rem;">
       <img class="card-img-top rounded-circle" src="../src/img/face1.jpg" alt="Card image cap" style="width:75px;height:75px;">
       <div class="card-body">
+          <h6 class = "card-text">Jane Black</h6>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
     </div>
     <div class="col card" style="width: 18rem;">
       <img class="card-img-top rounded-circle" src="../src/img/face1.jpg" alt="Card image cap" style="width:75px;height:75px;">
       <div class="card-body">
+          <h6 class = "card-text">Jane Black</h6>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
     </div>
