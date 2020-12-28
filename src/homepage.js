@@ -10,7 +10,7 @@ function createNavDiv(){
     </button>
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto nav nav-pills">
+      <ul class="navbar-nav mr-auto ">
         <li class="nav-item active">
           <a class="nav-link" href="#" id="home-link">Home <span class="sr-only">(current)</span></a>
         </li>
