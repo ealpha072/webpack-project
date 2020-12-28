@@ -1,5 +1,5 @@
-import {mainDiv,createNavDiv} from './homepage';
-createNavDiv()
+import {mainDiv,createNavDiv,createFooter} from './homepage';
+//createNavDiv()
 
 function createMealDiv1(){
   let mealDiv1 = document.createElement('div');
@@ -15,6 +15,7 @@ function createMealDiv1(){
 function createMealDiv2(){
   let mealDiv2 = document.createElement('div');
   mealDiv2.setAttribute('id','meals-menu')
+
   let contents =`
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -30,7 +31,8 @@ function createMealDiv2(){
         </div>
         <div class="dish-description">
             <h3>Lorem Ipsum Dolor Sit Amet</h3>
-            <p>Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor.</p>
+            <p>Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. <br>
+            Mauris porttitor diam at fringilla tempor.</p>
         </div>
         <div class="dish-value">
             <h3>$45</h3>
@@ -42,7 +44,8 @@ function createMealDiv2(){
         </div>
         <div class="dish-description">
           <h3>Lorem Ipsum Dolor Sit Amet</h3>
-          <p>Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor.</p>
+          <p>Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. <br>
+          Mauris porttitor diam at fringilla tempor.</p>
         </div>
         <div class="dish-value">
           <h3>$45</h3>
@@ -54,7 +57,8 @@ function createMealDiv2(){
         </div>
         <div class="dish-description">
           <h3>Lorem Ipsum Dolor Sit Amet</h3>
-          <p>Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor.</p>
+          <p>Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper.<br>
+           Mauris porttitor diam at fringilla tempor.</p>
         </div>
         <div class="dish-value">
           <h3>$45</h3>
@@ -69,7 +73,7 @@ function createMealDiv2(){
         </div>
         <div class="dish-description">
           <h3>Lorem Ipsum Dolor Sit Amet</h3>
-          <p>Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor.</p>
+          <p>Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper.</p>
         </div>
         <div class="dish-value">
           <h3>$45</h3>
@@ -81,7 +85,7 @@ function createMealDiv2(){
         </div>
         <div class="dish-description">
           <h3>Lorem Ipsum Dolor Sit Amet</h3>
-          <p>Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor.</p>
+          <p>Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper.</p>
         </div>
         <div class="dish-value">
           <h3>$45</h3>
@@ -93,7 +97,7 @@ function createMealDiv2(){
         </div>
         <div class="dish-description">
           <h3>Lorem Ipsum Dolor Sit Amet</h3>
-          <p>Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor.</p>
+          <p>Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. </p>
         </div>
         <div class="dish-value">
           <h3>$45</h3>
@@ -117,8 +121,10 @@ function createMealDiv2(){
 }
 
 function createMenuPage(){
+  createNavDiv();
   createMealDiv1();
   createMealDiv2();
+  createFooter();
 }
 
 export {createMenuPage}
