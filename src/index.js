@@ -1,8 +1,8 @@
 
 import {mainDiv,createNavDiv,createFooter,createHomepage} from './homepage';
-import {createMealDiv1}  from './menu';
+import {createMenuPage}  from './menu';
 //createNavDiv()
-createMealDiv1()
+createMenuPage();
 createFooter()
 //createHomepage();
 
