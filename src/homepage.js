@@ -12,10 +12,10 @@ function createNavDiv(){
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto nav nav-pills">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#" id="home-link">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Menu</a>
+        <li class="nav-item" >
+          <a class="nav-link" href="#" id="menu-link">Menu</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About us</a>
