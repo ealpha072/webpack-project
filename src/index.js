@@ -1,24 +1,21 @@
 
 import {mainDiv,createNavDiv,createFooter,createHomepage} from './homepage';
 import {createMenuPage}  from './menu';
-//createNavDiv()
-createMenuPage();
-createFooter()
-//createHomepage();
 
-/*let menuTab = document.getElementById('menu-link'),
+createHomepage();
+
+let menuTab = document.getElementById('menu-link'),
     homeTab = document.getElementById('home-link');
 console.log(homeTab)
 
 homeTab.addEventListener('click',(e)=>{
   mainDiv.innerHTML = '';
+  console.log('Success')
   createHomepage();
 })
 
 menuTab.addEventListener('click',(e)=>{
   mainDiv.innerHTML ='';
-  createNavDiv();
-
-  createFooter();
-})*/
+ createMenuPage();
+})
 
