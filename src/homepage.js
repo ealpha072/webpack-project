@@ -1,15 +1,7 @@
 const mainDiv = document.querySelector('.container-fluid');
 
-function createHomepage(){
-  let navDiv = document.createElement('div'),
-      bodyDiv = document.createElement('div'),
-      body2 = document.createElement('div'),
-      testimonialDiv = document.createElement('div'),
-      footerDiv = document.createElement('div');
-
-  bodyDiv.setAttribute('class','body-div')
-  testimonialDiv.setAttribute('id','testimony')
-  //testimonialDiv.setAttribute('class','bg-primary')
+function createNavDiv(){
+  let navDiv = document.createElement('div');
   let contents = `
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Raymond</a>
@@ -48,9 +40,15 @@ function createHomepage(){
       </ul>
       
     </div>
-  </nav> `,
+  </nav> `;
+  navDiv.innerHTML = contents
+  mainDiv.appendChild(navDiv)
+}
 
- footer = `
+function createFooter(){
+  let footerDiv = document.createElement('div');
+
+  let footer = `
       <footer class="bg-light text-center text-lg-start">
       <!-- Grid container -->
       <div class="container p-4 pb-0">
@@ -91,103 +89,115 @@ function createHomepage(){
       <!-- Copyright -->
     </footer>
   
-  `,
-
-  aboutUs = `
-      <div class="d-inline">
-        <div>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="../src/img/wp1.jpg" alt="First slide" class="img-fluid " style="max-width: 100%;height: auto;">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Fine Dining at Raymond</h3>
-              <p>Ellegance at its best</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="../src/img/wp2.jpg" alt="Second slide" class="img-fluid " style="max-width: 100%;height: auto;">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Fine Dining at Raymond</h3>
-              <p>Ellegance at its best</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="../src/img/wp3.jpg" alt="Third slide" class="img-fluid " style="max-width: 100%;height: auto;">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Fine Dining at Raymond</h3>
-              <p>Ellegance at its best</p>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-        </div>
-        <div>
-          <h1>About Us</h1>
-          <h6>RESTAURANT STYLE</h6>
-          <p>
-            Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. 
-            Mauris porttitor diam at fringilla tempor. Integer molestie rhoncus nisi a euismod. 
-            Etiam scelerisque eu enim et vestibulum. Mauris finibus, eros a faucibus varius, dui risus mattis massa. 
-            Nam eu dolor lorem. Praesent blandit leo sit amet velit accumsan ultrices. 
-            Vestibulum nec libero vel sapien dictum euismod eu ac justo.
-          </P
-        </div>
-      </div>
-      <div></div>
-      <div></div>
-  `,
-
-testimonials = `
-<h1 class="text-center">Testimonials</h1>
-  <div class= "row">
-    
-    <div class="col card" style="width: 18rem;">
-      <img class="card-img-top rounded-circle" src="../src/img/face1.jpg" alt="Card image cap" style="width:75px;height:75px;">
-      <div class="card-body">
-          <h6 class = "card-text">Jane Black</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-    </div>
-    <div class="col card" style="width: 18rem;">
-      <img class="card-img-top rounded-circle" src="../src/img/2.jpg" alt="Card image cap" style="width:75px;height:75px;">
-      <div class="card-body">
-          <h6 class = "card-text">Jane Black</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-    </div>
-    <div class="col card" style="width: 18rem;">
-      <img class="card-img-top rounded-circle" src="../src/img/3.jpg" alt="Card image cap" style="width:75px;height:75px;">
-      <div class="card-body">
-          <h6 class = "card-text">Jane Black</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-    </div>
-
-  </div>`,
-  body2 = `
-  
-  `
-
-
-  navDiv.innerHTML = contents
+  `;
   footerDiv.innerHTML =footer
-  bodyDiv.innerHTML = aboutUs
-  testimonialDiv.innerHTML = testimonials
-  mainDiv.append(navDiv,bodyDiv,body2,testimonialDiv,footerDiv)
+  mainDiv.appendChild(footerDiv)
 }
 
-export default createHomepage
+function createTestimonials(){
+  let testimonialDiv = document.createElement('div');
+  testimonialDiv.setAttribute('id','testimony')
+  let testimonials = `
+  <h1 class="text-center">Testimonials</h1>
+    <div class= "row">
+      
+      <div class="col card" style="width: 18rem;">
+        <img class="card-img-top rounded-circle" src="../src/img/face1.jpg" alt="Card image cap" style="width:75px;height:75px;">
+        <div class="card-body">
+            <h6 class = "card-text">Jane Black</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+      </div>
+      <div class="col card" style="width: 18rem;">
+        <img class="card-img-top rounded-circle" src="../src/img/2.jpg" alt="Card image cap" style="width:75px;height:75px;">
+        <div class="card-body">
+            <h6 class = "card-text">Jane Black</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+      </div>
+      <div class="col card" style="width: 18rem;">
+        <img class="card-img-top rounded-circle" src="../src/img/3.jpg" alt="Card image cap" style="width:75px;height:75px;">
+        <div class="card-body">
+            <h6 class = "card-text">Jane Black</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+      </div>
+  
+    </div>`;
+
+  testimonialDiv.innerHTML = testimonials
+  mainDiv.appendChild(testimonialDiv)
+}
+
+function createBody(){
+  let   bodyDiv = document.createElement('div');
+  bodyDiv.setAttribute('class','body-div')
+  let aboutUs = `
+  <div class="d-inline">
+    <div>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="../src/img/wp1.jpg" alt="First slide" class="img-fluid " style="max-width: 100%;height: auto;">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Fine Dining at Raymond</h3>
+          <p>Ellegance at its best</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="../src/img/wp2.jpg" alt="Second slide" class="img-fluid " style="max-width: 100%;height: auto;">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Fine Dining at Raymond</h3>
+          <p>Ellegance at its best</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="../src/img/wp3.jpg" alt="Third slide" class="img-fluid " style="max-width: 100%;height: auto;">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Fine Dining at Raymond</h3>
+          <p>Ellegance at its best</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+    </div>
+    <div>
+      <h1>About Us</h1>
+      <h6>RESTAURANT STYLE</h6>
+      <p>
+        Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. 
+        Mauris porttitor diam at fringilla tempor. Integer molestie rhoncus nisi a euismod. 
+        Etiam scelerisque eu enim et vestibulum. Mauris finibus, eros a faucibus varius, dui risus mattis massa. 
+        Nam eu dolor lorem. Praesent blandit leo sit amet velit accumsan ultrices. 
+        Vestibulum nec libero vel sapien dictum euismod eu ac justo.
+      </P
+    </div>
+  </div>
+  <div></div>
+  <div></div>`;
+  bodyDiv.innerHTML = aboutUs
+  mainDiv.appendChild(bodyDiv)
+}
+
+function createHomepage(){
+  createNavDiv()
+  createBody()
+  createTestimonials()
+  createFooter()
+
+}
+
+export {mainDiv,createNavDiv,createFooter,createHomepage}
