@@ -8,14 +8,11 @@ let menuTab = document.getElementById('menu-link'),
     homeTab = document.getElementById('home-link');
 console.log(homeTab)
 
-homeTab.addEventListener('click',(e)=>{
-  mainDiv.innerHTML = '';
-  console.log('Success')
-  createHomepage();
-})
-
 menuTab.addEventListener('click',(e)=>{
   mainDiv.innerHTML ='';
  createMenuPage();
 })
 
+homeTab.addEventListener('click',(e)=>{
+  mainDiv.innerHTML = '';
+})
